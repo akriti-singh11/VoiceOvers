@@ -1,0 +1,83 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    background-image:linear-gradient(125deg,#A87C7C,#7E6363);
+    color: #3E3232;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 200vh;
+    /* overflow: hidden; */
+    margin: 0;
+    
+    
+}
+
+.button{
+    position: relative;
+    left: -200px;
+    top:100px;
+    padding: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
+    
+    
+}
+
+.grid-container{
+    position: absolute;
+    top:300px;
+    right: 150px;
+    bottom: 100px;
+    display:grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px 200px 200px; 
+    padding: 10px;
+    /* border: 1px solid rgb(80, 60, 60); */
+    opacity: 0; 
+}
+
+.grid-container.active{
+    opacity: 1;
+}
+
+#myVideo{
+    border-radius: 10px;
+    padding: 4px;
+    object-fit: cover;
+
+}
+
+.grid-item{
+    position: relative;
+    background-color: antiquewhite;
+    border: 1px solid rgb(80, 60, 60); 
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.grid-item:hover{
+   background-color: rgb(13, 6, 6);
+   opacity: 35%;
+   transition: 0.2s ease-out;
+   
+}
+
+.topic {
+    font-size: 60px;
+    position: fixed;
+    left:215px;
+    top:300px;
+    opacity: 0;
+    
+}
+
+.topic:hover{
+   opacity: 100;
+   z-index: 2;
+}
